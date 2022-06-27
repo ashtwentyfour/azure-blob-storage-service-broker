@@ -83,7 +83,8 @@ def get_account_token(name, container):
     return {
         "sas_token": sas_token,
         "container": container,
-        "blob_sas_url": blob_sas_url
+        "blob_sas_url": blob_sas_url,
+        "storage_account": storage_account_name
     }
 
 def delete_account(name):
