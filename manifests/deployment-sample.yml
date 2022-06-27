@@ -2,8 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    environment: production
-  name: service-broker
+    app: service-broker 
+  name: azure-storage-service-broker
   namespace: default
 spec:
   replicas: 2
