@@ -1,0 +1,9 @@
+azure-mgmt-resource
+azure-mgmt-storage
+azure-cli
+azure-identity
+azure.storage.blob
+datetime
+Flask==2.0.3
+flask_httpauth
+pyyaml

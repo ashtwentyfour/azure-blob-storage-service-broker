@@ -1,0 +1,29 @@
+catalog:
+  services:
+    - id: a9968739-d9c1-4ff7-abb8-f7c965dd338d
+      name: azure-storage-account
+      description: Provisions a standard general purpose v2 Azure storage account container
+      bindable: true
+      tags:
+        - azure
+        - cloud
+        - blob storage
+      metadata:
+        displayName: Storage Account
+        imageUrl: https://raw.githubusercontent.com/benc-uk/icon-collection/master/azure-icons/Storage-Accounts.svg
+        longDescription: The service creates an storage account and container along with a SAS with read and write permissions
+        providerDisplayName: Microsoft Azure
+        documentationUrl: https://github.com/ashtwentyfour/azure-blob-storage-service-broker
+        supportUrl: https://github.com/ashtwentyfour/azure-blob-storage-service-broker
+      plans: # a service has one or more plans
+        - id: c939f5a1-7ce9-4f92-99c0-a03e1d30afa3
+          name: Standard v2
+          description: Standard general purpose v2 storage account
+          metadata:
+            bullets:
+              - SAS token is returned
+            costs:
+              - amount:
+                  usd: 0.0
+                unit: DAILY
+            displayName: Storage v2

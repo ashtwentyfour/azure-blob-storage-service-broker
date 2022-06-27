@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: broker
+spec:
+  type: LoadBalancer
+  selector:
+    app: service-broker
+  ports:
+  - name: broker-api-port
+    protocol: TCP
+    port: 80
+    targetPort: 80

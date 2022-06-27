@@ -1,0 +1,6 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ClusterServiceBroker
+metadata:
+  name: azure-storage-account-broker
+spec:
+  url: http://admin:Password123@20.104.142.82
