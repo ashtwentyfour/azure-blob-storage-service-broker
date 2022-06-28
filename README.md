@@ -109,4 +109,14 @@ The broker provisions 'Standard general-purpose v2' [storage accounts](https://d
 
 ## Sample Application
 
-* 
+* The `sample-app` folder incudes a manifest for a Kubernetes [job](https://kubernetes.io/docs/concepts/workloads/controllers/job/) which uploads a large `.txt` file to a blob container on Azure
+* The Pod requires the SAS token, storage account and container details which can be referenced from the service binding details (Kubernetes secret created during the binding)
+
+  ```bash
+  $ kubectl apply -f sample-app/upload-job.yml
+  ```
+
+## Deleting the Services
+
+* Deleting the service instances will delete the storage accounts corresponding to each instance
+* Deleting the binding will delete the blob container with the same name as the binding ID
