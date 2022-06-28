@@ -1,0 +1,9 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceBinding
+metadata:
+  name: storage-binding-01
+  namespace: default
+spec:
+  secretName: sa-secret-01
+  instanceRef:
+    name: storage-account-01
