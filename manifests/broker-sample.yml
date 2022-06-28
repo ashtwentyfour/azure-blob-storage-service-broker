@@ -3,4 +3,4 @@ kind: ClusterServiceBroker
 metadata:
   name: azure-storage-account-broker
 spec:
-  url: http://admin:XXXX@20.104.142.82
+  url: http://admin:XXXX@storagebroker.cloud.ashcorp.com
