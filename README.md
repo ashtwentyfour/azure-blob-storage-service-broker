@@ -118,5 +118,5 @@ The broker provisions 'Standard general-purpose v2' [storage accounts](https://d
 
 ## Deleting the Services
 
-* Deleting the service instances will delete the storage accounts corresponding to each instance
-* Deleting the binding will delete the blob container with the same name as the binding ID
+* Deleting the service instances will delete the storage accounts corresponding to each instance (`DELETE /v2/service_instances/<instance_id>`)
+* Deleting the binding will delete the blob container with the same name as the binding ID (`DELETE /v2/service_instances/<instance_id>/service_bindings/<binding_id>`)
