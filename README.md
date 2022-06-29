@@ -49,7 +49,7 @@ The broker provisions 'Standard general-purpose v2' [storage accounts](https://d
 
 ## Broker Configuration
 
-* The broker can be registered by applying the manifest - `manifests/broker-sample.yml` (the sample endpoint and username/password must be replaced with the broker application endpoint and broker credentials respectively)
+* The broker can be registered by applying the manifest - `manifests/clusterservicebroker-sample.yml` (the sample endpoint and username/password must be replaced with the broker application endpoint and broker credentials respectively)
 
   ```bash
   $ kubectl apply -f manifests/clusterservicebroker-sample.yml
